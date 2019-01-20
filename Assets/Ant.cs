@@ -61,25 +61,8 @@ public class Ant : MonoBehaviour {
 		}
 		if (currentDestination.rating > 0)
 		{
-			Vector3 output = Vector3.zero;
-			if (Input.GetKey("w"))
-			{
-				output += Vector3.forward;
-			}
-			if (Input.GetKey("s"))
-			{
-				output -= Vector3.forward;
-			}
-			if (Input.GetKey("a"))
-			{
-				output -= Vector3.right;
-			}
-			if (Input.GetKey("d"))
-			{
-				output += Vector3.right;
-			}
-			output.y = 0;
-			Vector3.Normalize(output);
+			
+			var output = Vector3.Normalize(currentDestination.transform.position);
 			transform.Translate(output * Time.deltaTime * _speed, Space.World);
 			// transform.position += output * Time.deltaTime * _speed;
 
