@@ -53,9 +53,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CharacterInput.cs" />
-     <Compile Include="Assets\Destination.cs" />
-     <Compile Include="Assets\Downscale.cs" />
+     <Compile Include="Assets\Scripts\Ant.cs" />
+     <Compile Include="Assets\Scripts\ClickScript.cs" />
+     <Compile Include="Assets\Scripts\Destination.cs" />
+     <Compile Include="Assets\Scripts\Downscale.cs" />
+     <Compile Include="Assets\Scripts\HomeDestination.cs" />
+     <Compile Include="Assets\Scripts\IDestination.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>D:/Antz/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
